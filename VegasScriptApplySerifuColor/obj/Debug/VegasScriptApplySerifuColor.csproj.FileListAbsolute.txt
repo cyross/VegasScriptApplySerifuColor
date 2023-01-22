@@ -1,0 +1,17 @@
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\VegasScriptApplySerifuColor.dll.config
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\VegasScriptApplySerifuColor.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\VegasScriptApplySerifuColor.pdb
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ScriptPortal.Vegas.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ScriptPortal.MediaSoftware.ExternalVideoDevice.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ScriptPortal.Capture.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ScriptPortal.MediaSoftware.clrshared.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ScriptPortal.MediaSoftware.Skins.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\log4net.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ja-JP\ScriptPortal.Vegas.resources.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ja-JP\ScriptPortal.Capture.resources.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\bin\Debug\ja-JP\ScriptPortal.MediaSoftware.clrshared.resources.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Debug\VegasScriptApplySerifuColor.csproj.AssemblyReference.cache
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Debug\VegasScriptApplySerifuColor.csproj.CoreCompileInputs.cache
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Debug\VegasScriptApplySerifuColor.csproj.CopyComplete
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Debug\VegasScriptApplySerifuColor.dll
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Debug\VegasScriptApplySerifuColor.pdb
