@@ -866,36 +866,36 @@ namespace VegasScriptApplySerifuColor.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color 女声1 {
+        public global::System.Drawing.Color 女性1 {
             get {
-                return ((global::System.Drawing.Color)(this["女声1"]));
+                return ((global::System.Drawing.Color)(this["女性1"]));
             }
             set {
-                this["女声1"] = value;
+                this["女性1"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color 女声2 {
+        public global::System.Drawing.Color 女性2 {
             get {
-                return ((global::System.Drawing.Color)(this["女声2"]));
+                return ((global::System.Drawing.Color)(this["女性2"]));
             }
             set {
-                this["女声2"] = value;
+                this["女性2"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color 女声3 {
+        public global::System.Drawing.Color 女性3 {
             get {
-                return ((global::System.Drawing.Color)(this["女声3"]));
+                return ((global::System.Drawing.Color)(this["女性3"]));
             }
             set {
-                this["女声3"] = value;
+                this["女性3"] = value;
             }
         }
         
@@ -914,36 +914,36 @@ namespace VegasScriptApplySerifuColor.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color 男声1 {
+        public global::System.Drawing.Color 男性1 {
             get {
-                return ((global::System.Drawing.Color)(this["男声1"]));
+                return ((global::System.Drawing.Color)(this["男性1"]));
             }
             set {
-                this["男声1"] = value;
+                this["男性1"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color 男声2 {
+        public global::System.Drawing.Color 男性2 {
             get {
-                return ((global::System.Drawing.Color)(this["男声2"]));
+                return ((global::System.Drawing.Color)(this["男性2"]));
             }
             set {
-                this["男声2"] = value;
+                this["男性2"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color 男声3 {
+        public global::System.Drawing.Color 男性3 {
             get {
-                return ((global::System.Drawing.Color)(this["男声3"]));
+                return ((global::System.Drawing.Color)(this["男性3"]));
             }
             set {
-                this["男声3"] = value;
+                this["男性3"] = value;
             }
         }
         
@@ -980,6 +980,66 @@ namespace VegasScriptApplySerifuColor.Properties {
             }
             set {
                 this["ロサ_ROSA_"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color 男声4 {
+            get {
+                return ((global::System.Drawing.Color)(this["男声4"]));
+            }
+            set {
+                this["男声4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color 女声4 {
+            get {
+                return ((global::System.Drawing.Color)(this["女声4"]));
+            }
+            set {
+                this["女声4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color 男の子 {
+            get {
+                return ((global::System.Drawing.Color)(this["男の子"]));
+            }
+            set {
+                this["男の子"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color 彩澄しゅお {
+            get {
+                return ((global::System.Drawing.Color)(this["彩澄しゅお"]));
+            }
+            set {
+                this["彩澄しゅお"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color 彩澄りりせ {
+            get {
+                return ((global::System.Drawing.Color)(this["彩澄りりせ"]));
+            }
+            set {
+                this["彩澄りりせ"] = value;
             }
         }
     }

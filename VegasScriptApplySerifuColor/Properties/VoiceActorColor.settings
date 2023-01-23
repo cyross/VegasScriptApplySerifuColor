@@ -212,25 +212,25 @@
     <Setting Name="東北ずん子" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
-    <Setting Name="女声1" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="女性1" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
-    <Setting Name="女声2" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="女性2" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
-    <Setting Name="女声3" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="女性3" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="女の子" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
-    <Setting Name="男声1" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="男性1" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
-    <Setting Name="男声2" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="男性2" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
-    <Setting Name="男声3" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="男性3" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="さとうささら" Type="System.Drawing.Color" Scope="User">
@@ -240,6 +240,21 @@
       <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="ロサ_ROSA_" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="男声4" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="女声4" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="男の子" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="彩澄しゅお" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="彩澄りりせ" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
     </Setting>
   </Settings>
