@@ -218,12 +218,12 @@ namespace VegasScriptApplySerifuColor.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("PaleGoldenrod")]
-        public global::System.Drawing.Color 春部つむぎ {
+        public global::System.Drawing.Color 春日部つむぎ {
             get {
-                return ((global::System.Drawing.Color)(this["春部つむぎ"]));
+                return ((global::System.Drawing.Color)(this["春日部つむぎ"]));
             }
             set {
-                this["春部つむぎ"] = value;
+                this["春日部つむぎ"] = value;
             }
         }
         

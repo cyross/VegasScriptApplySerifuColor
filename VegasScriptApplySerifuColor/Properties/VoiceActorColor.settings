@@ -50,7 +50,7 @@
     <Setting Name="ずんだもん_ヒソヒソ_" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">PaleGreen</Value>
     </Setting>
-    <Setting Name="春部つむぎ" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="春日部つむぎ" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">PaleGoldenrod</Value>
     </Setting>
     <Setting Name="雨晴はう" Type="System.Drawing.Color" Scope="User">
