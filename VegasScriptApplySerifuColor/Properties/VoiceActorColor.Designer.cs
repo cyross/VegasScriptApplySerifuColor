@@ -25,7 +25,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Lime")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん"]));
@@ -49,7 +49,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192, 0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 192, 192")]
         public global::System.Drawing.Color 琴葉_茜 {
             get {
                 return ((global::System.Drawing.Color)(this["琴葉_茜"]));
@@ -61,7 +61,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん"]));
@@ -73,7 +73,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん_ノーマル_"]));
@@ -85,7 +85,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん_あまあま_ {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん_あまあま_"]));
@@ -97,7 +97,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん_ツンツン_ {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん_ツンツン_"]));
@@ -109,7 +109,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん_セクシー_ {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん_セクシー_"]));
@@ -121,7 +121,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん_ささやき_ {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん_ささやき_"]));
@@ -133,7 +133,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DeepPink")]
         public global::System.Drawing.Color 四国めたん_ヒソヒソ_ {
             get {
                 return ((global::System.Drawing.Color)(this["四国めたん_ヒソヒソ_"]));
@@ -145,7 +145,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん_ノーマル_"]));
@@ -157,7 +157,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん_あまあま_ {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん_あまあま_"]));
@@ -169,7 +169,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん_ツンツン_ {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん_ツンツン_"]));
@@ -181,7 +181,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん_セクシー_ {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん_セクシー_"]));
@@ -193,7 +193,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん_ささやき_ {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん_ささやき_"]));
@@ -205,7 +205,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color ずんだもん_ヒソヒソ_ {
             get {
                 return ((global::System.Drawing.Color)(this["ずんだもん_ヒソヒソ_"]));
@@ -217,7 +217,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGoldenrod")]
         public global::System.Drawing.Color 春部つむぎ {
             get {
                 return ((global::System.Drawing.Color)(this["春部つむぎ"]));
@@ -229,7 +229,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Aqua")]
         public global::System.Drawing.Color 雨晴はう {
             get {
                 return ((global::System.Drawing.Color)(this["雨晴はう"]));
@@ -241,7 +241,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Snow")]
         public global::System.Drawing.Color 玄野武宏 {
             get {
                 return ((global::System.Drawing.Color)(this["玄野武宏"]));
@@ -253,7 +253,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Snow")]
         public global::System.Drawing.Color 玄野武宏_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["玄野武宏_ノーマル_"]));
@@ -265,7 +265,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Snow")]
         public global::System.Drawing.Color 玄野武宏_喜び_ {
             get {
                 return ((global::System.Drawing.Color)(this["玄野武宏_喜び_"]));
@@ -277,7 +277,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Snow")]
         public global::System.Drawing.Color 玄野武宏_ツンギレ_ {
             get {
                 return ((global::System.Drawing.Color)(this["玄野武宏_ツンギレ_"]));
@@ -289,7 +289,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Snow")]
         public global::System.Drawing.Color 玄野武宏_悲しみ_ {
             get {
                 return ((global::System.Drawing.Color)(this["玄野武宏_悲しみ_"]));
@@ -301,7 +301,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightGreen")]
         public global::System.Drawing.Color 白上虎太郎 {
             get {
                 return ((global::System.Drawing.Color)(this["白上虎太郎"]));
@@ -313,7 +313,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightGreen")]
         public global::System.Drawing.Color 白上虎太郎_ふつう_ {
             get {
                 return ((global::System.Drawing.Color)(this["白上虎太郎_ふつう_"]));
@@ -325,7 +325,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightGreen")]
         public global::System.Drawing.Color 白上虎太郎_わーい_ {
             get {
                 return ((global::System.Drawing.Color)(this["白上虎太郎_わーい_"]));
@@ -337,7 +337,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightGreen")]
         public global::System.Drawing.Color 白上虎太郎_びくびく_ {
             get {
                 return ((global::System.Drawing.Color)(this["白上虎太郎_びくびく_"]));
@@ -349,7 +349,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightGreen")]
         public global::System.Drawing.Color 白上虎太郎_おこ_ {
             get {
                 return ((global::System.Drawing.Color)(this["白上虎太郎_おこ_"]));
@@ -361,7 +361,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightGreen")]
         public global::System.Drawing.Color 白上虎太郎_ぴえーん_ {
             get {
                 return ((global::System.Drawing.Color)(this["白上虎太郎_ぴえーん_"]));
@@ -373,7 +373,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SteelBlue")]
         public global::System.Drawing.Color 青山龍星 {
             get {
                 return ((global::System.Drawing.Color)(this["青山龍星"]));
@@ -385,7 +385,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("BlueViolet")]
         public global::System.Drawing.Color 冥鳴ひまり {
             get {
                 return ((global::System.Drawing.Color)(this["冥鳴ひまり"]));
@@ -397,7 +397,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら"]));
@@ -409,7 +409,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら_ノーマル_"]));
@@ -421,7 +421,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら_あまあま_ {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら_あまあま_"]));
@@ -433,7 +433,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら_ツンツン_ {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら_ツンツン_"]));
@@ -445,7 +445,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら_セクシー_ {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら_セクシー_"]));
@@ -457,7 +457,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら_ささやき_ {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら_ささやき_"]));
@@ -469,7 +469,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MediumOrchid")]
         public global::System.Drawing.Color 九州そら_ヒソヒソ_ {
             get {
                 return ((global::System.Drawing.Color)(this["九州そら_ヒソヒソ_"]));
@@ -493,7 +493,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Gray")]
         public global::System.Drawing.Color 剣崎雌雄 {
             get {
                 return ((global::System.Drawing.Color)(this["剣崎雌雄"]));
@@ -505,7 +505,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightSkyBlue")]
         public global::System.Drawing.Color WhiteCUL {
             get {
                 return ((global::System.Drawing.Color)(this["WhiteCUL"]));
@@ -517,7 +517,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightSkyBlue")]
         public global::System.Drawing.Color WhiteCUL_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["WhiteCUL_ノーマル_"]));
@@ -529,7 +529,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightSkyBlue")]
         public global::System.Drawing.Color WhiteCUL_たのしい_ {
             get {
                 return ((global::System.Drawing.Color)(this["WhiteCUL_たのしい_"]));
@@ -541,7 +541,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightSkyBlue")]
         public global::System.Drawing.Color WhiteCUL_かなしい_ {
             get {
                 return ((global::System.Drawing.Color)(this["WhiteCUL_かなしい_"]));
@@ -553,7 +553,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightSkyBlue")]
         public global::System.Drawing.Color WhiteCUL_ぴえーん_ {
             get {
                 return ((global::System.Drawing.Color)(this["WhiteCUL_ぴえーん_"]));
@@ -565,7 +565,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 後鬼 {
             get {
                 return ((global::System.Drawing.Color)(this["後鬼"]));
@@ -577,7 +577,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 後鬼_人間ver__ {
             get {
                 return ((global::System.Drawing.Color)(this["後鬼_人間ver__"]));
@@ -589,7 +589,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 後鬼_ぬいぐるみver__ {
             get {
                 return ((global::System.Drawing.Color)(this["後鬼_ぬいぐるみver__"]));
@@ -601,7 +601,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DarkBlue")]
         public global::System.Drawing.Color No_7 {
             get {
                 return ((global::System.Drawing.Color)(this["No_7"]));
@@ -613,7 +613,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DarkBlue")]
         public global::System.Drawing.Color No_7_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["No_7_ノーマル_"]));
@@ -625,7 +625,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DarkBlue")]
         public global::System.Drawing.Color No_7_アナウンス_ {
             get {
                 return ((global::System.Drawing.Color)(this["No_7_アナウンス_"]));
@@ -637,7 +637,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DarkBlue")]
         public global::System.Drawing.Color No_7_読み聞かせ_ {
             get {
                 return ((global::System.Drawing.Color)(this["No_7_読み聞かせ_"]));
@@ -649,7 +649,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightCyan")]
         public global::System.Drawing.Color ちび式じい {
             get {
                 return ((global::System.Drawing.Color)(this["ちび式じい"]));
@@ -661,7 +661,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightPink")]
         public global::System.Drawing.Color 櫻歌ミコ {
             get {
                 return ((global::System.Drawing.Color)(this["櫻歌ミコ"]));
@@ -673,7 +673,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightPink")]
         public global::System.Drawing.Color 櫻歌ミコ_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["櫻歌ミコ_ノーマル_"]));
@@ -685,7 +685,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightPink")]
         public global::System.Drawing.Color 櫻歌ミコ_第二形態_ {
             get {
                 return ((global::System.Drawing.Color)(this["櫻歌ミコ_第二形態_"]));
@@ -697,7 +697,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightPink")]
         public global::System.Drawing.Color 櫻歌ミコ_ロリ_ {
             get {
                 return ((global::System.Drawing.Color)(this["櫻歌ミコ_ロリ_"]));
@@ -709,7 +709,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DimGray")]
         public global::System.Drawing.Color 小夜_SAYO {
             get {
                 return ((global::System.Drawing.Color)(this["小夜_SAYO"]));
@@ -733,7 +733,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LemonChiffon")]
         public global::System.Drawing.Color ナースロボ＿タイプＴ_ノーマル_ {
             get {
                 return ((global::System.Drawing.Color)(this["ナースロボ＿タイプＴ_ノーマル_"]));
@@ -745,7 +745,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LemonChiffon")]
         public global::System.Drawing.Color ナースロボ＿タイプＴ_楽々_ {
             get {
                 return ((global::System.Drawing.Color)(this["ナースロボ＿タイプＴ_楽々_"]));
@@ -757,7 +757,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LemonChiffon")]
         public global::System.Drawing.Color ナースロボ＿タイプＴ_恐怖_ {
             get {
                 return ((global::System.Drawing.Color)(this["ナースロボ＿タイプＴ_恐怖_"]));
@@ -769,7 +769,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LemonChiffon")]
         public global::System.Drawing.Color ナースロボ＿タイプＴ_内緒話_ {
             get {
                 return ((global::System.Drawing.Color)(this["ナースロボ＿タイプＴ_内緒話_"]));
@@ -781,7 +781,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightBlue")]
         public global::System.Drawing.Color 琴葉_葵 {
             get {
                 return ((global::System.Drawing.Color)(this["琴葉_葵"]));
@@ -793,7 +793,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Orchid")]
         public global::System.Drawing.Color 結月ゆかり {
             get {
                 return ((global::System.Drawing.Color)(this["結月ゆかり"]));
@@ -805,7 +805,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Gainsboro")]
         public global::System.Drawing.Color 紲星あかり {
             get {
                 return ((global::System.Drawing.Color)(this["紲星あかり"]));
@@ -817,7 +817,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Gold")]
         public global::System.Drawing.Color 桜乃そら {
             get {
                 return ((global::System.Drawing.Color)(this["桜乃そら"]));
@@ -829,7 +829,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SpringGreen")]
         public global::System.Drawing.Color 京町セイカ_v1_ {
             get {
                 return ((global::System.Drawing.Color)(this["京町セイカ_v1_"]));
@@ -841,7 +841,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Turquoise")]
         public global::System.Drawing.Color フリモメン {
             get {
                 return ((global::System.Drawing.Color)(this["フリモメン"]));
@@ -853,7 +853,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PaleGreen")]
         public global::System.Drawing.Color 東北ずん子 {
             get {
                 return ((global::System.Drawing.Color)(this["東北ずん子"]));
@@ -865,7 +865,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 192, 192")]
         public global::System.Drawing.Color 女性1 {
             get {
                 return ((global::System.Drawing.Color)(this["女性1"]));
@@ -877,7 +877,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 192, 192")]
         public global::System.Drawing.Color 女性2 {
             get {
                 return ((global::System.Drawing.Color)(this["女性2"]));
@@ -889,7 +889,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 192, 192")]
         public global::System.Drawing.Color 女性3 {
             get {
                 return ((global::System.Drawing.Color)(this["女性3"]));
@@ -901,7 +901,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 128, 128")]
         public global::System.Drawing.Color 女の子 {
             get {
                 return ((global::System.Drawing.Color)(this["女の子"]));
@@ -913,7 +913,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 男性1 {
             get {
                 return ((global::System.Drawing.Color)(this["男性1"]));
@@ -925,7 +925,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 男性2 {
             get {
                 return ((global::System.Drawing.Color)(this["男性2"]));
@@ -937,7 +937,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 男性3 {
             get {
                 return ((global::System.Drawing.Color)(this["男性3"]));
@@ -949,7 +949,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Coral")]
         public global::System.Drawing.Color さとうささら {
             get {
                 return ((global::System.Drawing.Color)(this["さとうささら"]));
@@ -961,7 +961,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Silver")]
         public global::System.Drawing.Color 小春六花 {
             get {
                 return ((global::System.Drawing.Color)(this["小春六花"]));
@@ -973,7 +973,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 224, 192")]
         public global::System.Drawing.Color ロサ_ROSA_ {
             get {
                 return ((global::System.Drawing.Color)(this["ロサ_ROSA_"]));
@@ -985,7 +985,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("RoyalBlue")]
         public global::System.Drawing.Color 男声4 {
             get {
                 return ((global::System.Drawing.Color)(this["男声4"]));
@@ -997,7 +997,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 192, 192")]
         public global::System.Drawing.Color 女声4 {
             get {
                 return ((global::System.Drawing.Color)(this["女声4"]));
@@ -1009,7 +1009,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("CornflowerBlue")]
         public global::System.Drawing.Color 男の子 {
             get {
                 return ((global::System.Drawing.Color)(this["男の子"]));
@@ -1021,7 +1021,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("HotPink")]
         public global::System.Drawing.Color 彩澄しゅお {
             get {
                 return ((global::System.Drawing.Color)(this["彩澄しゅお"]));
@@ -1033,7 +1033,7 @@ namespace VegasScriptApplySerifuColor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DodgerBlue")]
         public global::System.Drawing.Color 彩澄りりせ {
             get {
                 return ((global::System.Drawing.Color)(this["彩澄りりせ"]));
