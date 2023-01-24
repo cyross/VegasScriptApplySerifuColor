@@ -14,6 +14,10 @@ namespace VegasScriptApplySerifuColor
         public static bool StartFrom;
         public static string[] SupportedAudioFile = null;
         public readonly static Dictionary<string, Color> TextColorByActor = new Dictionary<string, Color>();
+        public readonly static Dictionary<string, Color> OutlineColorByActor = new Dictionary<string, Color>();
+        public static double AssignEventMargin;
+        public static string TargetAssignTrackName;
+        public static double JimakuOutlineWidth;
 
         public static void Load()
         {
@@ -25,6 +29,9 @@ namespace VegasScriptApplySerifuColor
             OpenDirectory = Properties.Vegas.Default.openDirectory;
             IsRecursive = Properties.Vegas.Default.isRecursive;
             StartFrom = Properties.Vegas.Default.startFrom;
+            AssignEventMargin = Properties.Vegas.Default.assignEventMargin;
+            TargetAssignTrackName = Properties.Vegas.Default.targetAssignTrackName;
+            JimakuOutlineWidth = Properties.Vegas.Default.jimakuOutlineWidth;
 
             List<string> audioFileExts = new List<string>();
             foreach (SettingsProperty property in Properties.SupportedAudioFileSettings.Default.Properties)
@@ -35,16 +42,26 @@ namespace VegasScriptApplySerifuColor
             SupportedAudioFile = audioFileExts.ToArray();
 
             TextColorByActor.Clear();
-            foreach(SettingsProperty property in Properties.VoiceActorColor.Default.Properties)
+            foreach (SettingsProperty property in Properties.VoiceActorColor.Default.Properties)
             {
                 PropertyInfo pinfo = typeof(Properties.VoiceActorColor).GetProperty(property.Name);
                 TextColorByActor[property.Name] = (Color)pinfo.GetValue(Properties.VoiceActorColor.Default);
+            }
+
+            OutlineColorByActor.Clear();
+            foreach (SettingsProperty property in Properties.VoiceActorOutlineColor.Default.Properties)
+            {
+                PropertyInfo pinfo = typeof(Properties.VoiceActorOutlineColor).GetProperty(property.Name);
+                OutlineColorByActor[property.Name] = (Color)pinfo.GetValue(Properties.VoiceActorOutlineColor.Default);
             }
         }
 
         public static void Save()
         {
             // VoiceActorColor, SupportedAudioFileSettingはマスタ情報なので保存不要
+            Properties.Vegas.Default.jimakuOutlineWidth = JimakuOutlineWidth;
+            Properties.Vegas.Default.targetAssignTrackName = TargetAssignTrackName;
+            Properties.Vegas.Default.assignEventMargin = AssignEventMargin;
             Properties.Vegas.Default.startFrom = StartFrom;
             Properties.Vegas.Default.isRecursive = IsRecursive;
             Properties.Vegas.Default.audioInsertInterval = AudioInsertInterval;

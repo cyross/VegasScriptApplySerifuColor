@@ -15,3 +15,5 @@ C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerif
 C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Release\VegasScriptApplySerifuColor.csproj.CopyComplete
 C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Release\VegasScriptApplySerifuColor.dll
 C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Release\VegasScriptApplySerifuColor.pdb
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Release\VegasScriptApplySerifuColor.SettingForm.resources
+C:\Users\takehiro\source\repos\VegasScriptApplySerifuColor\VegasScriptApplySerifuColor\obj\Release\VegasScriptApplySerifuColor.csproj.GenerateResource.cache

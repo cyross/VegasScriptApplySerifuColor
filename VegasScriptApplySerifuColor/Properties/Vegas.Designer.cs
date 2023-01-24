@@ -70,5 +70,41 @@ namespace VegasScriptApplySerifuColor.Properties {
                 this["startFrom"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public double assignEventMargin {
+            get {
+                return ((double)(this["assignEventMargin"]));
+            }
+            set {
+                this["assignEventMargin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Subtitles")]
+        public string targetAssignTrackName {
+            get {
+                return ((string)(this["targetAssignTrackName"]));
+            }
+            set {
+                this["targetAssignTrackName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public double jimakuOutlineWidth {
+            get {
+                return ((double)(this["jimakuOutlineWidth"]));
+            }
+            set {
+                this["jimakuOutlineWidth"] = value;
+            }
+        }
     }
 }

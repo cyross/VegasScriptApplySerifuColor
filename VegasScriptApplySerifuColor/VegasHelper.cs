@@ -6,6 +6,12 @@ using ScriptPortal.Vegas;
 
 namespace VegasScriptApplySerifuColor
 {
+    internal struct VegasDuration
+    {
+        public Timecode StartTime;
+        public Timecode Length;
+    }
+
     /// <summary>
     /// Vegasオブジェクトを操作するヘルパクラス
     /// 本クラスはSingleton
@@ -66,14 +72,14 @@ namespace VegasScriptApplySerifuColor
         /// <returns>選択プロジェクトがあればそのTrackオブジェクト、なければnull</returns>
         internal Track SelectedTrack(Project project)
         {
-            foreach(Track track in project.Tracks)
+            foreach (Track track in project.Tracks)
             {
                 if (track.Selected)
                 {
                     return track;
                 }
             }
-            return null;
+            throw new VegasHelperTrackUnselectedException();
         }
 
         /// <summary>
@@ -94,12 +100,14 @@ namespace VegasScriptApplySerifuColor
         /// <returns>選択プロジェクトがあればそのTrackオブジェクト、なければnull</returns>
         internal VideoTrack SelectedVideoTrack(Project project)
         {
-            Track track = SelectedTrack();
-            if (track is null)
+            foreach (Track track in project.Tracks)
             {
-                return null;
+                if (track.Selected && track.IsVideo())
+                {
+                    return (VideoTrack)track;
+                }
             }
-            return track.IsVideo() ? (VideoTrack)track : null;
+            throw new VegasHelperTrackUnselectedException();
         }
 
         /// <summary>
@@ -120,12 +128,74 @@ namespace VegasScriptApplySerifuColor
         /// <returns>選択プロジェクトがあればそのTrackオブジェクト、なければnull</returns>
         internal AudioTrack SelectedAudioTrack(Project project)
         {
-            Track track = SelectedTrack();
-            if (track is null)
+            foreach (Track track in project.Tracks)
             {
-                return null;
+                if (track.Selected && track.IsVideo())
+                {
+                    return (AudioTrack)track;
+                }
             }
-            return track.IsAudio() ? (AudioTrack)track : null;
+            throw new VegasHelperTrackUnselectedException();
+        }
+
+        internal string GetTrackTitle(Track track)
+        {
+            return track.Name;
+        }
+
+        internal string GetVideoTrackTitle()
+        {
+            VideoTrack track = SelectedVideoTrack();
+            return GetTrackTitle(track);
+        }
+
+        internal string GetAudioTrackTitle()
+        {
+            AudioTrack track = SelectedAudioTrack();
+            return GetTrackTitle(track);
+        }
+
+        internal void SetTrackTitle(Track track, string title)
+        {
+            track.Name = title;
+        }
+
+        internal void SetVideoTrackTitle(string title)
+        {
+            VideoTrack track = SelectedVideoTrack();
+            SetTrackTitle(track, title);
+        }
+
+        internal void SetAudioTrackTitle(string title)
+        {
+            AudioTrack track = SelectedAudioTrack();
+            SetTrackTitle(track, title);
+        }
+
+        internal VideoTrack SearchVideoTrackByName(string name)
+        {
+            Project project = Vegas.Project;
+            foreach (Track track in project.Tracks)
+            {
+                if (track.IsVideo() && track.Name == name)
+                {
+                    return (VideoTrack)track;
+                }
+            }
+            throw new VegasHelperNotFoundTrackException();
+        }
+
+        internal AudioTrack SearchAudioTrackByName(string name)
+        {
+            Project project = Vegas.Project;
+            foreach (Track track in project.Tracks)
+            {
+                if (track.IsAudio() && track.Name == name)
+                {
+                    return (AudioTrack)track;
+                }
+            }
+            throw new VegasHelperNotFoundTrackException();
         }
 
         /// <summary>
@@ -170,6 +240,7 @@ namespace VegasScriptApplySerifuColor
         internal void InseretAudioInTrack(string fileDir, float interval = 0.0f, bool fromStart = false, bool recursive = true)
         {
             AudioTrack audioTrack = AddAudioTrack();
+            SetTrackTitle(audioTrack, "Subtitles");
             audioTrack.Selected = true;
 
             Timecode currentPosition = fromStart ? new Timecode() : Vegas.Cursor;
@@ -208,21 +279,17 @@ namespace VegasScriptApplySerifuColor
             return track.Events;
         }
 
-        internal TrackEvents GetVideoEvents()
+        internal TrackEvents GetVideoEvents(bool throwError = true)
         {
             VideoTrack selected = SelectedVideoTrack();
-
-            if (selected is null) { return null; }
-
+            if (throwError && selected.Events.Count == 0) { throw new VegasHelperNoneEventsException(); }
             return selected.Events;
         }
 
-        internal TrackEvents GetAudioEvents()
+        internal TrackEvents GetAudioEvents(bool throwError = true)
         {
             AudioTrack selected = SelectedAudioTrack();
-
-            if (selected is null) { return null; }
-
+            if (throwError && selected.Events.Count == 0) { throw new VegasHelperNoneEventsException(); }
             return selected.Events;
         }
 
@@ -233,7 +300,18 @@ namespace VegasScriptApplySerifuColor
 
         internal Take[] GetFirstTakes(TrackEvents events)
         {
-            IEnumerable<Take> takes = events.Select(e => e.Takes[0]);
+            IEnumerable<Take> takes = events.Select(e => GetFirstTake(e));
+            return takes.ToArray();
+        }
+
+        internal Take[] GetLastTakes(Track track)
+        {
+            return GetLastTakes(track.Events);
+        }
+
+        internal Take[] GetLastTakes(TrackEvents events)
+        {
+            IEnumerable<Take> takes = events.Select(e => GetLastTake(e));
             return takes.ToArray();
         }
 
@@ -247,21 +325,20 @@ namespace VegasScriptApplySerifuColor
             return trackEvent.Takes[0];
         }
 
+        internal Take GetLastTake(TrackEvent trackEvent)
+        {
+            return trackEvent.Takes[trackEvent.Takes.Count - 1];
+        }
+
         internal Take[] GetVideoTakes()
         {
             VideoTrack selected = SelectedVideoTrack();
-
-            if (selected is null) { return null; }
-
             return GetFirstTakes(selected.Events);
         }
 
         internal Take[] GetAudioTakes()
         {
             AudioTrack selected = SelectedAudioTrack();
-
-            if (selected is null) { return null; }
-
             return GetFirstTakes(selected.Events);
         }
 
@@ -278,18 +355,12 @@ namespace VegasScriptApplySerifuColor
         internal Media[] GetVideoMediaList()
         {
             VideoTrack selected = SelectedVideoTrack();
-
-            if (selected is null) { return null; }
-
             return GetMediaList(selected.Events);
         }
 
         internal Media[] GetAudioMediaList()
         {
             AudioTrack selected = SelectedAudioTrack();
-
-            if (selected is null) { return null; }
-
             return GetMediaList(selected.Events);
         }
 
@@ -300,27 +371,28 @@ namespace VegasScriptApplySerifuColor
             return mediaList.ToArray();
         }
 
-        internal OFXStringParameter GetOFXStringParameter(Media media)
+        internal OFXStringParameter GetOFXStringParameter(Media media, bool retNull = true)
         {
-            foreach(OFXParameter param in media.Generator.OFXEffect.Parameters)
+            foreach (OFXParameter param in media.Generator.OFXEffect.Parameters)
             {
-                if(param.ParameterType == OFXParameterType.String)
+                if (param.ParameterType == OFXParameterType.String)
                 {
                     return (OFXStringParameter)param;
                 }
             }
-            return null;
+            if (retNull) { return null; }
+            throw new VegasHelperNotFoundOFXParameterException();
         }
 
-        internal OFXStringParameter[] GetOFXStringParameters(Media[] mediaList)
+        internal OFXStringParameter[] GetOFXStringParameters(Media[] mediaList, bool retNull = true)
         {
-            return mediaList.Select(m => GetOFXStringParameter(m)).ToList().ToArray();
+            return mediaList.Select(m => GetOFXStringParameter(m, retNull)).ToList().ToArray();
         }
 
-        internal OFXStringParameter[] GetOFXStringParameters(VideoTrack track)
+        internal OFXStringParameter[] GetOFXStringParameters(VideoTrack track, bool retNull = true)
         {
             Media[] mediaList = GetMediaList(track.Events);
-            return GetOFXStringParameters(mediaList);
+            return GetOFXStringParameters(mediaList, retNull);
         }
 
         /// <summary>
@@ -328,13 +400,10 @@ namespace VegasScriptApplySerifuColor
         /// ビデオトラックを選択していなければnullを返す
         /// </summary>
         /// <returns>選択したビデオトラックから得られたメディジェネレータ文字列パラメータの配列、もしくはnull</returns>
-        internal OFXStringParameter[] GetOFXStringParameters()
+        internal OFXStringParameter[] GetOFXStringParameters(bool retNull = true)
         {
             VideoTrack selected = SelectedVideoTrack();
-
-            if (selected is null) { return null; }
-
-            return GetOFXStringParameters(selected);
+            return GetOFXStringParameters(selected, retNull);
         }
 
         public string GetOFXParameterString(OFXStringParameter param)
@@ -345,10 +414,6 @@ namespace VegasScriptApplySerifuColor
         public string GetOFXParameterString(Media media)
         {
             OFXStringParameter param = GetOFXStringParameter(media);
-            if (param is null)
-            {
-                return null;
-            }
             return GetOFXParameterString(param);
         }
 
@@ -360,9 +425,6 @@ namespace VegasScriptApplySerifuColor
         internal string[] GetOFXParameterStrings()
         {
             VideoTrack selected = SelectedVideoTrack();
-
-            if (selected is null) { return null; }
-
             OFXStringParameter[] ofxParams = GetOFXStringParameters(selected);
             return GetOFXParameterStrings(ofxParams);
         }
@@ -380,14 +442,14 @@ namespace VegasScriptApplySerifuColor
         /// <param name="values">設定する文字列（RTF）の配列</param>
         internal void SetStringsIntoOFXParameters(OFXStringParameter[] ofxParams, string[] values)
         {
-            if(ofxParams.Length != values.Length) { return; }
-            for(int i = 0; i < ofxParams.Length; i++)
+            if (ofxParams.Length != values.Length) { return; }
+            for (int i = 0; i < ofxParams.Length; i++)
             {
                 SetStringIntoOFXParameter(ofxParams[i], values[i]);
             }
         }
 
-        internal OFXRGBAParameter GetTextRGBAParameter(Media media)
+        internal OFXRGBAParameter GetTextRGBAParameter(Media media, bool retNull = true)
         {
             foreach (OFXParameter param in media.Generator.OFXEffect.Parameters)
             {
@@ -397,32 +459,147 @@ namespace VegasScriptApplySerifuColor
                     return (OFXRGBAParameter)param;
                 }
             }
-            return null;
+            if (retNull) { return null; }
+            throw new VegasHelperNotFoundOFXParameterException();
         }
 
-        internal OFXRGBAParameter[] GetTextRGBAParameters(Media[] mediaList)
+        internal OFXRGBAParameter GetOutlineRGBAParameter(Media media, bool retNull = true)
         {
-            return mediaList.Select(m => GetTextRGBAParameter(m)).ToList().ToArray();
+            foreach (OFXParameter param in media.Generator.OFXEffect.Parameters)
+            {
+                if (param.ParameterType == OFXParameterType.RGBA &&
+                    param.Name == "OutlineColor")
+                {
+                    return (OFXRGBAParameter)param;
+                }
+            }
+            if (retNull) { return null; }
+            throw new VegasHelperNotFoundOFXParameterException();
         }
 
-        internal OFXRGBAParameter[] GetTextRGBAParameters(VideoTrack track)
+        internal OFXDoubleParameter GetOutlineWidthParameter(Media media, bool retNull = true)
+        {
+            foreach (OFXParameter param in media.Generator.OFXEffect.Parameters)
+            {
+                if (param.ParameterType == OFXParameterType.Double &&
+                    param.Name == "OutlineWidth")
+                {
+                    return (OFXDoubleParameter)param;
+                }
+            }
+            if (retNull) { return null; }
+            throw new VegasHelperNotFoundOFXParameterException();
+        }
+
+        internal OFXRGBAParameter[] GetTextRGBAParameters(Media[] mediaList, bool retNull = true)
+        {
+            return mediaList.Select(m => GetTextRGBAParameter(m, retNull)).ToList().ToArray();
+        }
+
+        internal OFXRGBAParameter[] GetTextRGBAParameters(VideoTrack track, bool retNull = true)
         {
             Media[] mediaList = GetMediaList(track.Events);
-            return GetTextRGBAParameters(mediaList);
+            return GetTextRGBAParameters(mediaList, retNull);
         }
 
-        internal OFXRGBAParameter[] GetTextRGBAParameters()
+        internal OFXRGBAParameter[] GetTextRGBAParameters(bool retNull = true)
         {
             VideoTrack selected = SelectedVideoTrack();
-
-            if (selected is null) { return null; }
-
-            return GetTextRGBAParameters(selected);
+            return GetTextRGBAParameters(selected, retNull);
         }
 
-        internal void SetTextRGBAParameter(OFXRGBAParameter param, OFXColor color)
+        internal void SetRGBAParameter(OFXRGBAParameter param, OFXColor color)
         {
             param.SetValueAtTime(BaseTimecode, color);
+        }
+
+        internal void SetDoubleParameter(OFXDoubleParameter param, double value)
+        {
+            param.SetValueAtTime(BaseTimecode, value);
+        }
+
+        internal VegasDuration GetEventTime(TrackEvent trackEvent)
+        {
+            VegasDuration duration = new VegasDuration();
+            duration.StartTime = trackEvent.Start;
+            duration.Length = trackEvent.Length;
+            return duration;
+        }
+
+        internal void SetEventTime(TrackEvent trackEvent, VegasDuration duration, double margin = 0.0f, bool adjustTakes = true)
+        {
+            Timecode start = duration.StartTime - new Timecode(margin);
+            Timecode length = duration.Length + new Timecode(margin * 2);
+            trackEvent.AdjustStartLength(start, length, adjustTakes);
+        }
+
+        internal void AddTrackEventGroup(TrackEvent src, TrackEvent dst)
+        {
+            // Vegas.Project.TrackEventGroups.Addメソッドを先に呼ばいないと、
+            // group.Addする際に例外が発生する
+            TrackEventGroup group = new TrackEventGroup(Vegas.Project);
+            Vegas.Project.TrackEventGroups.Add(group);
+            group.Add(src);
+            group.Add(dst);
+        }
+
+        internal void AssignAudioTrackDurationToVideoTrack(VideoTrack videoTrack, AudioTrack audioTrack, double margin = 0.0f, bool adjustTakes = true, bool group = true)
+        {
+            TrackEvents videoEvents = videoTrack.Events;
+            TrackEvents audioEvents = audioTrack.Events;
+
+            if (videoEvents.Count != audioEvents.Count) { return; }
+
+            // TrackEventsのまま処理をするとリストの内容が勝手に入れ替わって不具合の原因になるため、
+            // 別のListを作ってそこにTrackEventを挿入する
+            List<TrackEvent> tmpVideoEvents = RefillTrackEvents(videoEvents);
+            List<TrackEvent> tmpAudioEvents = RefillTrackEvents(audioEvents);
+
+            for (int i = 0; i < videoEvents.Count; i++)
+            {
+                VegasDuration duration = GetEventTime(audioEvents[i]);
+                SetEventTime(tmpVideoEvents[i], duration, margin, adjustTakes);
+
+                if (group) { AddTrackEventGroup(tmpAudioEvents[i], tmpVideoEvents[i]); }
+            }
+        }
+
+        internal void AssignAudioTrackDurationToVideoTrack(string trackName, double margin = 0, bool adjustTakes = true, bool group = true)
+        {
+            VideoTrack videoTrack = SearchVideoTrackByName(trackName);
+            AudioTrack audioTrack = SearchAudioTrackByName(trackName);
+            AssignAudioTrackDurationToVideoTrack(videoTrack, audioTrack, margin, adjustTakes, group);
+        }
+
+        internal void DeleteJimakuPrefix()
+        {
+            VideoTrack track = SelectedVideoTrack();
+            DeleteJimakuPrefix(track);
+        }
+        internal void DeleteJimakuPrefix(string title)
+        {
+            VideoTrack track = SearchVideoTrackByName(title);
+            DeleteJimakuPrefix(track);
+        }
+
+        internal void DeleteJimakuPrefix(VideoTrack track)
+        {
+            DeleteJimakuPrefix(track.Events);
+        }
+
+        internal void DeleteJimakuPrefix(TrackEvents trackEvents)
+        {
+            foreach (TrackEvent trackEvent in trackEvents)
+            {
+                DeleteJimakuPrefix(trackEvent);
+            }
+        }
+
+        private List<TrackEvent> RefillTrackEvents(TrackEvents trackEvents)
+        {
+            List<TrackEvent> events = new List<TrackEvent>();
+            foreach (TrackEvent e in trackEvents) { events.Add(e); }
+            return events;
         }
     }
 }

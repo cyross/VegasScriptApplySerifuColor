@@ -14,5 +14,14 @@
     <Setting Name="startFrom" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="assignEventMargin" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="targetAssignTrackName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Subtitles</Value>
+    </Setting>
+    <Setting Name="jimakuOutlineWidth" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

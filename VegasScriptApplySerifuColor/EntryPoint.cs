@@ -10,18 +10,26 @@ namespace VegasScriptApplySerifuColor
             VegasScriptSettings.Load();
             VegasHelper helper = VegasHelper.Instance(vegas);
 
-            TrackEvents events = helper.GetVideoEvents();
-            if (events is null)
+            try
+            {
+                TrackEvents events = helper.GetVideoEvents();
+
+                SettingForm form = new SettingForm();
+                form.OutlineWidth = VegasScriptSettings.JimakuOutlineWidth;
+
+                if(form.ShowDialog() == DialogResult.OK)
+                {
+                    helper.ApplyTextColorByActor(events, form.OutlineWidth, form.RemovePrefix);
+                }
+            }
+            catch(VegasHelperTrackUnselectedException)
             {
                 MessageBox.Show("ビデオトラックが選択されていません。");
-                return;
             }
-            if (events.Count == 0)
+            catch(VegasHelperNoneEventsException)
             {
                 MessageBox.Show("選択したビデオトラック中にイベントが存在していません。");
             }
-
-            helper.ApplyTextColorByActor(events);
         }
     }
 }
