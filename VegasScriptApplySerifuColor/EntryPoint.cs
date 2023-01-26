@@ -1,4 +1,5 @@
 ﻿using ScriptPortal.Vegas;
+using VegasScriptHelper;
 using System.Windows.Forms;
 
 namespace VegasScriptApplySerifuColor
