@@ -1,2 +1,0 @@
-C:\Users\takehiro\source\repos\VegasScriptAddSerifu\VegasScriptPrescribedPattern\obj\Release\VegasScriptAddSerifu.csproj.AssemblyReference.cache
-C:\Users\takehiro\source\repos\VegasScriptAddSerifu\VegasScriptPrescribedPattern\obj\Release\VegasScriptAddSerifu.csproj.CoreCompileInputs.cache
