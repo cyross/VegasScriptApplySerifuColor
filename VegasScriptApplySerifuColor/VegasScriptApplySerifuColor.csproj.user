@@ -3,5 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files\VEGAS\VEGAS Pro 20.0\vegas200.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
 </Project>

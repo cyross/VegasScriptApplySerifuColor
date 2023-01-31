@@ -28,5 +28,16 @@ namespace VegasScriptApplySerifuColor
             get { return RemovePrefixFlag.Checked; }
             set { RemovePrefixFlag.Checked = value; }
         }
+
+        public object JimakuTrackDataSource
+        {
+            set { jimakuTrackName.DataSource = value; }
+        }
+
+        public string JimakuTrackName
+        {
+            get { return jimakuTrackName.Text; }
+            set { jimakuTrackName.Text = value;}
+        }
     }
 }
