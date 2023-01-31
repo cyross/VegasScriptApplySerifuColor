@@ -1,4 +1,4 @@
-# VegasScriptPrescribedPattern
+# VegasScriptApplySerifuColor
 
 ## 概要
 
