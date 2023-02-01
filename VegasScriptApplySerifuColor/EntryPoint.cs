@@ -20,22 +20,9 @@ namespace VegasScriptApplySerifuColor
                 return;
             }
 
-            VideoTrack selectedVideoTrack = null;
-            try
-            {
-                selectedVideoTrack = helper.SelectedVideoTrack();
-            }
-            catch (VegasHelperTrackUnselectedException)
-            {
-                selectedVideoTrack = null;
-            }
+            VideoTrack selectedVideoTrack = helper.SelectedVideoTrack(false);
 
-            Dictionary<string, VideoTrack> keyValuePairs = new Dictionary<string, VideoTrack>(); ;
-
-            foreach (VideoTrack videoTrack in videoTracks)
-            {
-                keyValuePairs[helper.GetTrackKey(videoTrack)] = videoTrack;
-            }
+            Dictionary<string, VideoTrack> keyValuePairs = helper.GetVideoKeyValuePairs(videoTracks);
             List<string> keyList = keyValuePairs.Keys.ToList();
 
             try
