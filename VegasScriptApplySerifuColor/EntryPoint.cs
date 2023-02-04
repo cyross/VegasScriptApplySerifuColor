@@ -6,7 +6,7 @@ using VegasScriptHelper;
 
 namespace VegasScriptApplySerifuColor
 {
-    public class EntryPoint
+    public class EntryPoint: IEntryPoint
     {
         public void FromVegas(Vegas vegas)
         {
