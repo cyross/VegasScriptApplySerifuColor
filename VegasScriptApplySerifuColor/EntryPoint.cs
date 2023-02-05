@@ -8,6 +8,8 @@ namespace VegasScriptApplySerifuColor
 {
     public class EntryPoint: IEntryPoint
     {
+        private SettingForm settingForm = null;
+
         public void FromVegas(Vegas vegas)
         {
             VegasHelper helper = VegasHelper.Instance(vegas);
@@ -27,17 +29,16 @@ namespace VegasScriptApplySerifuColor
 
             try
             {
-                SettingForm form = new SettingForm()
-                {
-                    JimakuTrackDataSource = keyList,
-                    JimakuTrackName = selectedVideoTrack != null ? helper.GetTrackKey(selectedVideoTrack) : keyList.First(),
-                    OutlineWidth = VegasScriptSettings.JimakuOutlineWidth
-                };
+                if(settingForm == null){ settingForm = new SettingForm(); }
 
-                if (form.ShowDialog() == DialogResult.Cancel) { return; }
+                settingForm.JimakuTrackDataSource = keyList;
+                settingForm.JimakuTrackName = selectedVideoTrack != null ? helper.GetTrackKey(selectedVideoTrack) : keyList.First();
+                settingForm.OutlineWidth = VegasScriptSettings.JimakuOutlineWidth;
 
-                TrackEvents events = helper.GetVideoEvents(keyValuePairs[form.JimakuTrackName]);
-                helper.ApplyTextColorByActor(events, form.OutlineWidth, form.RemovePrefix);
+                if (settingForm.ShowDialog() == DialogResult.Cancel) { return; }
+
+                TrackEvents events = helper.GetVideoEvents(keyValuePairs[settingForm.JimakuTrackName]);
+                helper.ApplyTextColorByActor(events, settingForm.OutlineWidth, settingForm.RemovePrefix);
             }
             catch (VegasHelperNoneEventsException)
             {
