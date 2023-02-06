@@ -1,5 +1,7 @@
 ﻿using ScriptPortal.Vegas;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
 using VegasScriptHelper;
@@ -38,11 +40,28 @@ namespace VegasScriptApplySerifuColor
                 if (settingForm.ShowDialog() == DialogResult.Cancel) { return; }
 
                 TrackEvents events = helper.GetVideoEvents(keyValuePairs[settingForm.JimakuTrackName]);
-                helper.ApplyTextColorByActor(events, settingForm.OutlineWidth, settingForm.RemovePrefix);
+
+                using (new UndoBlock("字幕に色を適応"))
+                {
+                    helper.ApplyTextColorByActor(events, settingForm.OutlineWidth, settingForm.RemovePrefix);
+                }
             }
             catch (VegasHelperNoneEventsException)
             {
                 MessageBox.Show("選択したビデオトラック中にイベントが存在していません。");
+            }
+            catch (Exception ex)
+            {
+                string errMessage = "[MESSAGE]" + ex.Message + "\n[SOURCE]" + ex.Source + "\n[STACKTRACE]" + ex.StackTrace;
+                Debug.WriteLine("---[Exception In Helper]---");
+                Debug.WriteLine(errMessage);
+                Debug.WriteLine("---------------------------");
+                MessageBox.Show(
+                    errMessage,
+                    "エラー",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                throw ex;
             }
         }
     }
